@@ -154,7 +154,7 @@ def create_page(phones_info):
 
 
 def upload_page(filename):
-    session = ftplib.FTP('abbo.msbonnema.nl', 'default_ftp', 'VchL7X_Uyh')
+    session = ftplib.FTP('host', 'user', 'pass')
     file = open(filename, 'rb')
     session.cwd('web')
     session.storbinary('STOR Samsung.html', file)
