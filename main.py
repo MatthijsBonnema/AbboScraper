@@ -65,7 +65,7 @@ def get_phones():
                 phones.append(phoneLink)
 
         page += 1
-        link = "https://telefoonabonnementen.mediamarkt.nl/smartphone-plus-abonnement/merk/samsung?sort=popular&p={}".format(
+        link = "{}".format(
             page)
 
     driver.close()
